@@ -1,0 +1,44 @@
+{
+  "name": "memo",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "http://tkfkdgody0010.github.io/memo",
+  "dependencies": {
+    "antd": "^3.19.2",
+    "icon-sdk-js": "^0.0.16",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "3.0.1",
+    "utf8": "^3.0.0"
+  },
+  "scripts": {
+    "start": "cross-env react-app-rewired start --scripts-version react-scripts",
+    "build": "cross-env NODE_ENV=production react-app-rewired build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "npm run build&&gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "babel-plugin-import": "^1.12.0",
+    "cross-env": "^5.2.0",
+    "customize-cra": "^0.2.13",
+    "less": "^3.9.0",
+    "less-loader": "^5.0.0",
+    "react-app-rewired": "^2.1.3"
+  }
+}
